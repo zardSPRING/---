@@ -201,10 +201,35 @@ a {
     height: 555px;
 }
 
-.jingpin div {
+.jingpin>div {
+    position: relative;
     float: left;
     width: 230px;
     height: 270px;
+    background-color: #ffffff;
+}
+
+h4 {
+    color: #050505;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 24px 18px 0px 23px;
+}
+
+h5 {
+    position: absolute;
+    left: 23px;
+    bottom: 25px;
+}
+
+.spanone {
+    font-size: 12px;
+    color: #ff9159;
+}
+
+.spantwo {
+    font-size: 12px;
+    color: #a1a1a1;
 }
 
 .jingpin div:nth-child(-n+4),
@@ -218,28 +243,6 @@ a {
 
 .jingpin div:nth-child(n+6) {
     margin-top: 15px;
-}
-
-.jingpin div:first-child,
-.jingpin div:nth-child(6) {
-    background: url(../images/jingpin-one.png) no-repeat;
-}
-
-.jingpin div:nth-child(2),
-.jingpin div:nth-child(7) {
-    background: url(../images/jingpin-two.png) no-repeat;
-}
-
-.jingpin div:nth-child(3),
-.jingpin div:nth-child(8) {
-    background: url(../images/jingpin-three.png) no-repeat;
-}
-
-.jingpin div:nth-child(4),
-.jingpin div:nth-child(5),
-.jingpin div:nth-child(9),
-.jingpin div:nth-child(10) {
-    background: url(../images/jingpin-four.png) no-repeat;
 }
 
 .webkaifa {
@@ -294,30 +297,16 @@ a {
 
 .web div {
     float: left;
+    position: relative;
+    overflow: hidden;
     width: 230px;
     height: 270px;
     margin-right: 12px;
-}
-
-.web div:first-child {
-    background: url(../images/web-one.png) no-repeat;
-}
-
-.web div:nth-child(2) {
-    background: url(../images/web-two.png) no-repeat;
-}
-
-.web div:nth-child(3) {
-    background: url(../images/web-three.png) no-repeat;
-}
-
-.web div:nth-child(4) {
-    background: url(../images/web-four.png) no-repeat;
+    background-color: #ffffff;
 }
 
 .web div:last-child {
     margin-right: 0;
-    background: url(../images/web-five.png) no-repeat;
 }
 
 .peoplerecomand {
@@ -333,31 +322,87 @@ a {
 
 .people div {
     float: left;
-    margin-right: 13px;
+    margin-right: 15px;
 }
 
-.people div:first-child {
+.biye {
+    position: relative;
     width: 470px;
     height: 320px;
-    background: url(../images/biyeji.png) no-repeat;
+    background: url(../images/biyeji.png);
 }
 
-.people div:nth-child(n+2) {
-    width: 230px;
+.biyeji {
+    position: absolute;
+    top: 95px;
+    left: 15px;
+    font-size: 30px;
+    color: #f9e103;
+}
+
+.huali {
+    position: absolute;
+    top: 132px;
+    left: 15px;
+    color: #ffffff;
+    font-size: 27.2px;
+}
+
+.chakan {
+    position: absolute;
+    left: 15px;
+    top: 175px;
+    width: 90px;
+    height: 26px;
+    border: 1px solid #f9e103;
+    text-align: center;
+}
+
+.chakan a {
+    line-height: 26px;
+    font-size: 12px;
+    color: #f9e103;
+}
+
+.people>div:nth-child(n+2) {
+    overflow: hidden;
+    position: relative;
+    width: 226px;
     height: 320px;
 }
 
-.people div:nth-child(2) {
-    background: url(../images/teacher-one.png) no-repeat;
+.teach {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 226px;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
 }
 
-.people div:nth-child(3) {
-    background: url(../images/teacher-two.png) no-repeat;
+.teachername {
+    font-size: 18px;
+}
+
+.job {
+    font-size: 14px;
+}
+
+.teacher {
+    line-height: 50px;
+    text-indent: 27px;
+}
+
+.jianli {
+    margin-left: 27px;
+    margin-right: 30px;
+    font-size: 12px;
 }
 
 .people div:last-child {
     margin-right: 0;
-    background: url(../images/teacher-three.png) no-repeat;
 }
 
 footer {
@@ -400,7 +445,15 @@ footer {
     left: 20px;
     height: 36px;
     width: 120px;
-    background: url(../images/downloadapp.png) no-repeat;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #00a4ff;
+}
+
+.app a {
+    color: #00a4ff;
+    ;
 }
 
 .guide {
