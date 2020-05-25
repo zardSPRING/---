@@ -285,9 +285,12 @@ h5 {
 }
 
 .webkaifa p:last-child {
-    color: #868686;
     font-size: 12px;
     line-height: 50px;
+}
+
+.webkaifa p:last-child>a {
+    color: #868686;
 }
 
 .web {
