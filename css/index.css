@@ -218,8 +218,9 @@ h4 {
 
 h5 {
     position: absolute;
+    font-size: 12px;
     left: 23px;
-    bottom: 25px;
+    bottom: 22px;
 }
 
 .spanone {
@@ -382,7 +383,7 @@ h5 {
     height: 120px;
     width: 226px;
     color: #fff;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .4);
 }
 
 .teachername {
@@ -394,14 +395,14 @@ h5 {
 }
 
 .teacher {
-    line-height: 50px;
-    text-indent: 27px;
+    margin-top: 14px;
+    text-indent: 26px;
 }
 
 .jianli {
-    margin-left: 27px;
-    margin-right: 30px;
+    margin: 8px 15px 0 26px;
     font-size: 12px;
+    line-height: 15px;
 }
 
 .people div:last-child {
